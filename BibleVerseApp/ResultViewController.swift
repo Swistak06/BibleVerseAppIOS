@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController{
 
     @IBOutlet weak var ResultTV: UITextView!
     @IBOutlet weak var ResultTVHC: NSLayoutConstraint!
@@ -26,10 +26,10 @@ class ResultViewController: UIViewController {
         //ResultTV.isScrollEnabled = false
         //ResultTV
         print(verseBible)
+        self.navigationItem.backBarButtonItem?.title = "BACK"
         //print(self.ResultTV.contentSize.height)
         //ResultTVHC.constant = self.ResultTV.contentSize.height
     }
     
-
 
 }

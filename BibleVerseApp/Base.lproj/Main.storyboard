@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NBL-g0-yXj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NBL-g0-yXj">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-454" y="100"/>
         </scene>
-        <!--View Controller-->
+        <!--BIBLE VERSE APP-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BibleVerseApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,20 +41,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-K8-9Y4">
                                 <rect key="frame" x="0.0" y="67" width="320" height="496"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIBLE VERSE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-7F-oO7">
-                                        <rect key="frame" x="42.5" y="0.0" width="235" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="xBv-Z3-8nt">
-                                        <rect key="frame" x="105" y="52" width="110" height="26.5"/>
+                                        <rect key="frame" x="105" y="0.0" width="110" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZfI-KW-KMu">
-                                        <rect key="frame" x="5" y="94.5" width="310" height="36"/>
+                                        <rect key="frame" x="5" y="49" width="310" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXN-n9-VPB">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="36"/>
@@ -82,25 +76,25 @@
                                         </subviews>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07r-sf-TcD">
-                                        <rect key="frame" x="10" y="146" width="300" height="30"/>
+                                        <rect key="frame" x="10" y="107.5" width="300" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="150-cO-WR6">
-                                        <rect key="frame" x="121.5" y="192" width="77" height="26.5"/>
+                                        <rect key="frame" x="121.5" y="159.5" width="77" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNQ-Nx-JIC">
-                                        <rect key="frame" x="25" y="234.5" width="270" height="30"/>
+                                        <rect key="frame" x="25" y="208.5" width="270" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="19E-Kq-6OZ">
-                                        <rect key="frame" x="5" y="280.5" width="310" height="60"/>
+                                        <rect key="frame" x="5" y="261" width="310" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8oU-dv-Gz7">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="60"/>
@@ -115,7 +109,7 @@
                                                         <rect key="frame" x="5" y="30" width="145" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -136,7 +130,7 @@
                                                         <rect key="frame" x="5" y="30" width="145" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -147,10 +141,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-oy-cnJ">
-                                        <rect key="frame" x="5" y="356" width="310" height="31"/>
+                                        <rect key="frame" x="5" y="343.5" width="310" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combined Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAR-B9-28J">
-                                                <rect key="frame" x="0.0" y="2.5" width="231" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="2" width="231" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -161,7 +155,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsh-km-Upx">
-                                        <rect key="frame" x="157.5" y="403" width="5.5" height="30"/>
+                                        <rect key="frame" x="157.5" y="396.5" width="5.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="1" green="0.21749417600000001" blue="0.17762766529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -192,6 +186,7 @@
                                     <constraint firstItem="07r-sf-TcD" firstAttribute="leading" secondItem="8bu-K8-9Y4" secondAttribute="leading" constant="10" id="C5R-GK-MeZ"/>
                                     <constraint firstAttribute="trailing" secondItem="F4i-oy-cnJ" secondAttribute="trailing" constant="5" id="HUx-B7-KqB"/>
                                     <constraint firstAttribute="trailing" secondItem="ZfI-KW-KMu" secondAttribute="trailing" constant="5" id="IGw-g2-VZS"/>
+                                    <constraint firstItem="xBv-Z3-8nt" firstAttribute="top" secondItem="8bu-K8-9Y4" secondAttribute="top" constant="10" id="PfA-5K-0eg"/>
                                     <constraint firstItem="ZfI-KW-KMu" firstAttribute="leading" secondItem="8bu-K8-9Y4" secondAttribute="leading" constant="5" id="Q5d-EP-BfQ"/>
                                     <constraint firstItem="RNQ-Nx-JIC" firstAttribute="leading" secondItem="8bu-K8-9Y4" secondAttribute="leading" constant="25" id="RWa-dE-6zS"/>
                                     <constraint firstItem="laN-SP-eJ7" firstAttribute="leading" secondItem="8bu-K8-9Y4" secondAttribute="leading" id="Rjq-u3-KAD"/>
@@ -213,7 +208,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qQx-oh-3q2"/>
+                    <navigationItem key="navigationItem" title="BIBLE VERSE APP" id="qQx-oh-3q2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="VX1-E7-zPU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="BookNameTextView" destination="07r-sf-TcD" id="RRI-9I-YYL"/>
                         <outlet property="ChapterNumberTextView" destination="RNQ-Nx-JIC" id="I2V-bn-ISz"/>
@@ -256,7 +253,9 @@
                             <outlet property="delegate" destination="D0I-Wj-jzC" id="ejE-qA-QDM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mPj-0Y-EJp"/>
+                    <navigationItem key="navigationItem" id="mPj-0Y-EJp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3bq-gs-T8P"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="BookTable" destination="RWo-UK-TZd" id="fdT-RZ-boI"/>
                         <outlet property="TableView" destination="RWo-UK-TZd" id="mmI-Eb-8aZ"/>
@@ -308,7 +307,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHe-z2-iIb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2db-ui-TyQ"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="2db-ui-TyQ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="t0I-T9-DBn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="BookNameLabel" destination="yCE-3U-sKA" id="Mcb-MY-Hfu"/>
                         <outlet property="ChapterLabel" destination="UPo-pP-0Dr" id="W73-TV-w5H"/>

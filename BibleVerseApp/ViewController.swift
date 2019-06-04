@@ -39,8 +39,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         ChapterNumberTextView.text = ""
         VerseBeginTextView.text = ""
         VerseEndTextView.text  = ""
-        
     }
+    
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            return .allButUpsideDown
+        } else{
+            return .all
+        }
+    }
+    
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if event?.subtype == UIEvent.EventSubtype.motionShake{
@@ -83,8 +92,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let apiURl = URL(string : urlString)!
     
             resultText = sendRequest(url: apiURl)
-            
+
             self.performSegue(withIdentifier: "CombinedApiRes", sender: self)
+
 
 
         }
@@ -143,6 +153,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             else{
                 self.showErrorMessage(errMSG: "Problem with connection")
+                self.book = "Problem with connection"
+                self.chapter = " "
+                semaphore.signal()
                 //Nie pozwoli zmieni sceny, komunikat o problemie z api call'em
             }
         }
